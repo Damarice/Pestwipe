@@ -1,7 +1,7 @@
 /********** Template CSS **********/
 :root {
-    --primary: #1E60AA;
-    --secondary: #FF4917;
+    --primary: #05abeb;
+    --secondary: #e7232a;
     --light: #EDF1FC;
     --dark: #17224D;
 }
@@ -18,7 +18,6 @@
     z-index: 99;
 }
 
-
 /*** Spinner ***/
 #spinner {
     opacity: 0;
@@ -32,7 +31,6 @@
     visibility: visible;
     opacity: 1;
 }
-
 
 /*** Button ***/
 .btn {
@@ -69,7 +67,6 @@
     justify-content: center;
     font-weight: normal;
 }
-
 
 /*** Navbar ***/
 .top-bar {
@@ -150,30 +147,29 @@
     }
 }
 
-
 /*** Header ***/
 .header-carousel .container,
 .page-header .container {
     position: relative;
     padding: 45px 0 45px 35px;
-    border-left: 15px solid #FFFFFF;
+    border-left: 15px solid var(--light);
 }
 
 .header-carousel .container::before,
 .header-carousel .container::after,
 .page-header .container::before,
-.page-header .container::after {
+page-header .container::after {
     position: absolute;
     content: "";
     top: 0;
     left: 0;
     width: 100px;
     height: 15px;
-    background: #FFFFFF;
+    background: var(--light);
 }
 
 .header-carousel .container::after,
-.page-header .container::after {
+page-header .container::after {
     top: 100%;
     margin-top: -15px;
 }
@@ -183,7 +179,7 @@
         position: relative;
         min-height: 500px;
     }
-    
+
     .header-carousel .owl-carousel-item img {
         position: absolute;
         width: 100%;
@@ -243,13 +239,11 @@
     color: var(--light);
 }
 
-
 /*** Facts ***/
 .fact {
     background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../img/bg.jpg) center center no-repeat;
     background-size: cover;
 }
-
 
 /*** Service ***/
 .service-item-top img {
@@ -282,7 +276,6 @@
     background: var(--light);
     border-color: var(--primary);
 }
-
 
 /*** Booking ***/
 .video {
@@ -425,7 +418,6 @@
     border-bottom-color: var(--primary);
 }
 
-
 /*** Team ***/
 .team-item img {
     transition: .5s;
@@ -469,7 +461,6 @@
     background: var(--secondary)
 }
 
-
 /*** Testimonial ***/
 .testimonial-carousel .owl-item .testimonial-text,
 .testimonial-carousel .owl-item.center .testimonial-text * {
@@ -496,7 +487,6 @@
     border: 15px solid;
     border-color: var(--light) transparent transparent transparent;
     transition: .5s;
-
 }
 
 .testimonial-carousel .owl-item.center .testimonial-text::after {
@@ -510,7 +500,7 @@
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    justify-content: space-between;
+    justify-content: space between;
     opacity: 0;
     transition: .5s;
     z-index: 1;
@@ -531,7 +521,6 @@
 .testimonial-carousel .owl-nav .owl-next:hover {
     color: var(--dark);
 }
-
 
 /*** Footer ***/
 .footer .btn.btn-social {
